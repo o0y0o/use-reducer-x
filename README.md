@@ -1,6 +1,6 @@
 # useEnhancedReducer · [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/shiningjason/react-enhanced-reducer-hook/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/react-enhanced-reducer-hook.svg)](https://www.npmjs.com/package/react-enhanced-reducer-hook) [![Build Status](https://travis-ci.org/shiningjason/react-enhanced-reducer-hook.svg?branch=master)](https://travis-ci.org/shiningjason/react-enhanced-reducer-hook)
 
-`useEnhancedReducer` is an alternative to `React.useReducer` that accepts middlewares to do some cool thing before and after dispatch.
+`useEnhancedReducer` is an alternative to `React.useReducer` that accepts middlewares to do some cool things before and after dispatch.
 
 Inspired by [Redux Middleware](https://redux.js.org/api/applymiddleware).
 
