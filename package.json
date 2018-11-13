@@ -1,6 +1,6 @@
 {
   "name": "react-enhanced-reducer-hook",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "An alternative to React.useReducer that accepts middlewares to do some cool thing before and after dispatch.",
   "main": "dist/useEnhancedReducer.cjs.js",
   "module": "dist/useEnhancedReducer.esm.js",
