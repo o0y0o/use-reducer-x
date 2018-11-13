@@ -10,18 +10,18 @@ function useEnhancedReducer(reducer, initialState, middlewares = []) {
   const hook = useState(initialState)
   let state = hook[0]
   const setState = hook[1]
+  const dispatch = action => {
+    state = reducer(state, action)
+    setState(state)
+    return action
+  }
+  let enhancedDispatch
   const store = {
-    getState: () => {
-      return state
-    },
-    dispatch: action => {
-      state = reducer(state, action)
-      setState(state)
-      return action
-    }
+    getState: () => state,
+    dispatch: (...args) => enhancedDispatch(...args)
   }
   const chain = middlewares.map(middleware => middleware(store))
-  const enhancedDispatch = compose.apply(void 0, chain)(store.dispatch)
+  enhancedDispatch = compose.apply(void 0, chain)(dispatch)
   return [state, enhancedDispatch]
 }
 

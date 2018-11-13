@@ -41,14 +41,10 @@ test('middlewares should be invoked by order', t => {
       next(action)
       t.is(++step, 4)
     },
-    ({ dispatch }) => () => action => {
-      t.is(++step, 2)
-      dispatch(action)
-      t.is(++step, 3)
-    },
     () => next => action => {
-      t.fail('here will not be called')
+      t.is(++step, 2)
       next(action)
+      t.is(++step, 3)
     }
   ]
   function TestComponent() {
@@ -63,6 +59,41 @@ test('middlewares should be invoked by order', t => {
   renderer.create(<TestComponent />)
   dispatch({})
   t.is(step, 4)
+})
+
+test('middleware should able to re-dispatch action', t => {
+  let dispatch
+  let step = 0
+  const middlewares = [
+    ({ dispatch }) => next => action => {
+      if (typeof action === 'function') {
+        t.is(++step, 1)
+        action(dispatch)
+        t.is(++step, 2)
+      } else {
+        t.is(++step, 4)
+        next(action)
+        t.is(++step, 7)
+      }
+    },
+    () => next => action => {
+      t.is(++step, 5)
+      next(action)
+      t.is(++step, 6)
+    }
+  ]
+  function TestComponent() {
+    const [state, enhancedDispatch] = useEnhancedReducer(
+      reducer,
+      initialState,
+      middlewares
+    )
+    dispatch = enhancedDispatch
+    return <div>{state}</div>
+  }
+  renderer.create(<TestComponent />)
+  dispatch(dispatch => setTimeout(() => dispatch({})))
+  t.is(++step, 3)
 })
 
 test('middleware should able to get state', t => {

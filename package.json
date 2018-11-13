@@ -7,6 +7,17 @@
   "repository": "https://github.com/shiningjason/react-enhanced-reducer-hook",
   "author": "Jason Chung <shiningjason1989@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "react-hooks",
+    "hooks",
+    "use-reducer",
+    "use-state",
+    "redux",
+    "redux-middleware",
+    "middleware",
+    "dispatch"
+  ],
   "scripts": {
     "format": "prettier --single-quote --no-semi --write *.js",
     "lint": "eslint *.js",
