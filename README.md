@@ -23,6 +23,7 @@ function App() {
 ```
 
 ## Installation
+
 ```
 npm install react-enhanced-reducer-hook --save
 ```
@@ -84,6 +85,8 @@ function App() {
   )
 }
 ```
+
+Try the demo in [codesanbox](https://codesandbox.io/s/xono668ynz).
 
 ## License
 
