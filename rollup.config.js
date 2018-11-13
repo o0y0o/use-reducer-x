@@ -22,9 +22,7 @@ export default {
     babel({
       babelrc: false,
       exclude: 'node_modules/**',
-      plugins: ['@babel/transform-runtime'],
-      presets: [['@babel/env', { modules: false }]],
-      runtimeHelpers: true
+      presets: [['@babel/env', { modules: false }]]
     }),
     nodeResolve(),
     commonjs()

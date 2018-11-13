@@ -7,7 +7,9 @@ function compose(...fns) {
 }
 
 function useEnhancedReducer(reducer, initialState, middlewares = []) {
-  let [state, setState] = useState(initialState)
+  const hook = useState(initialState)
+  let state = hook[0]
+  const setState = hook[1]
   const store = {
     getState: () => {
       return state
@@ -19,7 +21,7 @@ function useEnhancedReducer(reducer, initialState, middlewares = []) {
     }
   }
   const chain = middlewares.map(middleware => middleware(store))
-  const enhancedDispatch = compose(...chain)(store.dispatch)
+  const enhancedDispatch = compose.apply(void 0, chain)(store.dispatch)
   return [state, enhancedDispatch]
 }
 

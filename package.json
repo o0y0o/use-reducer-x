@@ -16,7 +16,6 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.1.5",
-    "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
@@ -40,7 +39,6 @@
     "rollup-plugin-peer-deps-external": "^2.2.0"
   },
   "peerDependencies": {
-    "@babel/runtime": "^7.1.5",
     "react": "^16.7.0-alpha.0"
   },
   "ava": {
