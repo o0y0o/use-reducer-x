@@ -41,8 +41,8 @@
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^4.0.0",
     "prettier": "^1.15.1",
-    "react": "^16.7.0-alpha.0",
-    "react-test-renderer": "^16.7.0-alpha.0",
+    "react": "^16.8.5",
+    "react-test-renderer": "^16.8.5",
     "rollup": "^0.67.0",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.2.0",
@@ -50,7 +50,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.0"
   },
   "peerDependencies": {
-    "react": "^16.7.0-alpha.0"
+    "react": ">= 16.8.0"
   },
   "ava": {
     "require": [
