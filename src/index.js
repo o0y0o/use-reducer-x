@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 function compose(...fns) {
   if (fns.length === 0) return arg => arg
@@ -8,21 +8,23 @@ function compose(...fns) {
 
 function useEnhancedReducer(reducer, initialState, middlewares = []) {
   const hook = useState(initialState)
-  let state = hook[0]
-  const setState = hook[1]
+  const draftState = useRef(initialState)
+
   const dispatch = action => {
-    state = reducer(state, action)
-    setState(state)
+    hook[1](prevState => {
+      draftState.current = reducer(prevState, action)
+      return draftState.current
+    })
     return action
   }
-  let enhancedDispatch
   const store = {
-    getState: () => state,
+    getState: () => draftState.current,
     dispatch: (...args) => enhancedDispatch(...args)
   }
   const chain = middlewares.map(middleware => middleware(store))
-  enhancedDispatch = compose.apply(void 0, chain)(dispatch)
-  return [state, enhancedDispatch]
+  const enhancedDispatch = compose.apply(undefined, chain)(dispatch)
+
+  return [hook[0], enhancedDispatch]
 }
 
 export default useEnhancedReducer

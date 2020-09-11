@@ -1,30 +1,25 @@
-import babel from 'rollup-plugin-babel'
-import commonjs from 'rollup-plugin-commonjs'
-import peerDepsExternal from 'rollup-plugin-peer-deps-external'
-import nodeResolve from 'rollup-plugin-node-resolve'
+import path from 'path'
+import babel from '@rollup/plugin-babel'
 import pkg from './package.json'
 
+const external = [pkg.dependencies, pkg.peerDependencies]
+  .filter(Boolean)
+  .flatMap(dep => Object.keys(dep))
+  .map(pkg => new RegExp(`^${pkg.replace(/\//g, '/')}`))
+
 export default {
-  input: './index.js',
+  input: path.join(__dirname, pkg.src),
+  external,
+  plugins: [babel({ exclude: 'node_modules/**', babelHelpers: 'bundled' })],
   output: [
     {
-      file: pkg.main,
+      file: path.join(__dirname, pkg.main),
       format: 'cjs',
-      interop: false
+      exports: 'default'
     },
     {
-      file: pkg.module,
-      format: 'esm'
+      file: path.join(__dirname, pkg.module),
+      format: 'es'
     }
-  ],
-  plugins: [
-    peerDepsExternal(),
-    babel({
-      babelrc: false,
-      exclude: 'node_modules/**',
-      presets: [['@babel/env', { modules: false }]]
-    }),
-    nodeResolve(),
-    commonjs()
   ]
 }

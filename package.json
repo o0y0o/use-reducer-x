@@ -1,12 +1,19 @@
 {
-  "name": "react-enhanced-reducer-hook",
-  "version": "1.0.2",
+  "name": "@0y0/use-enhanced-reducer",
+  "version": "1.0.0",
   "description": "An alternative to React.useReducer that accepts middlewares to do some cool things before and after dispatch.",
-  "main": "dist/useEnhancedReducer.cjs.js",
-  "module": "dist/useEnhancedReducer.esm.js",
-  "repository": "https://github.com/shiningjason/react-enhanced-reducer-hook",
+  "src": "src/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "repository": "https://github.com/o0y0o/react-enhanced-reducer-hook",
   "author": "Jason Chung <shiningjason1989@gmail.com>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "/dist"
+  ],
   "keywords": [
     "react",
     "react-hooks",
@@ -19,61 +26,32 @@
     "dispatch"
   ],
   "scripts": {
-    "format": "prettier --single-quote --no-semi --write *.js",
-    "lint": "eslint *.js",
-    "build": "rollup --config",
-    "test": "NODE_ENV=test ava"
+    "format": "prettier --write src/*.js",
+    "lint": "eslint src/*.js",
+    "test": "jest",
+    "build": "rollup -c"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.1.5",
-    "@babel/preset-env": "^7.1.5",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "ava": "^1.0.0-rc.2",
-    "eslint": "^5.8.0",
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-config-standard-react": "^7.0.2",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-react": "^7.11.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "prettier": "^1.15.1",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@testing-library/react-hooks": "^3.4.1",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.3.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.1",
     "react": "^16.8.5",
-    "react-test-renderer": "^16.8.5",
-    "rollup": "^0.67.0",
-    "rollup-plugin-babel": "^4.0.3",
-    "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-node-resolve": "^3.4.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0"
+    "react-test-renderer": "^16.13.1",
+    "rollup": "^2.26.11"
   },
   "peerDependencies": {
-    "react": ">= 16.8.0"
-  },
-  "ava": {
-    "require": [
-      "@babel/register"
-    ],
-    "verbose": true
-  },
-  "babel": {
-    "env": {
-      "test": {
-        "presets": [
-          "@babel/env",
-          "@babel/react"
-        ]
-      }
-    }
-  },
-  "eslintConfig": {
-    "extends": [
-      "standard",
-      "standard-react",
-      "prettier",
-      "prettier/standard"
-    ]
+    "react": ">=16.8.0"
   }
 }

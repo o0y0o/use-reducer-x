@@ -1,7 +1,0 @@
-*.log
-.travis.yml
-index.js
-package-lock.json
-rollup.config.js
-test.js
-yarn.lock
