@@ -1,4 +1,4 @@
-# @0y0/use-enhanced-reducer · [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/o0y0o/react-enhanced-reducer-hook/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/@0y0/use-enhanced-reducer.svg)](https://www.npmjs.com/package/@0y0/use-enhanced-reducer) ![Status](https://github.com/o0y0o/react-enhanced-reducer-hook/workflows/Package/badge.svg)
+# @0y0/use-enhanced-reducer · [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/o0y0o/use-enhanced-reducer/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/@0y0/use-enhanced-reducer.svg)](https://www.npmjs.com/package/@0y0/use-enhanced-reducer) ![Status](https://github.com/o0y0o/use-enhanced-reducer/workflows/Package/badge.svg)
 
 `@0y0/use-enhanced-reducer` is an alternative to `React.useReducer` that accepts middlewares to do some cool things before and after dispatch.
 
@@ -90,4 +90,4 @@ Try the demo in [codesanbox](https://codesandbox.io/s/xono668ynz).
 
 ## License
 
-[MIT](https://github.com/o0y0o/react-enhanced-reducer-hook/blob/master/LICENSE)
+[MIT](https://github.com/o0y0o/use-enhanced-reducer/blob/master/LICENSE)
