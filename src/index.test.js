@@ -1,5 +1,5 @@
 import { act, renderHook } from '@testing-library/react-hooks'
-import useEnhancedReducer from './index'
+import useReducerX from './index'
 
 const initialState = 0
 const reducer = (state, action) => {
@@ -13,8 +13,8 @@ const reducer = (state, action) => {
   }
 }
 
-test('useEnhancedReducer should work like React.useReducer', () => {
-  const { result } = renderHook(() => useEnhancedReducer(reducer, initialState))
+test('useReducerX should work like React.useReducer', () => {
+  const { result } = renderHook(() => useReducerX(reducer, initialState))
 
   act(() => {
     result.current[1]({})
@@ -47,7 +47,7 @@ test('middlewares should be invoked by order', () => {
     }
   ]
   const { result } = renderHook(() =>
-    useEnhancedReducer(reducer, initialState, middlewares)
+    useReducerX(reducer, initialState, middlewares)
   )
 
   act(() => {
@@ -78,7 +78,7 @@ test('middleware should able to re-dispatch action', () => {
     }
   ]
   const { result } = renderHook(() =>
-    useEnhancedReducer(reducer, initialState, middlewares)
+    useReducerX(reducer, initialState, middlewares)
   )
 
   act(() => {
@@ -99,7 +99,7 @@ test('middleware should able to get state', () => {
     }
   ]
   const { result } = renderHook(() =>
-    useEnhancedReducer(reducer, initialState, middlewares)
+    useReducerX(reducer, initialState, middlewares)
   )
 
   act(() => {

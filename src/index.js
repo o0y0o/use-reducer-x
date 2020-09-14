@@ -6,15 +6,15 @@ function compose(...fns) {
   return fns.reduce((a, b) => (...args) => a(b(...args)))
 }
 
-function useEnhancedReducer(reducer, initialState, middlewares = []) {
+function useReducerX(reducer, initialState, middlewares = []) {
   const hook = useState(initialState)
+  const state = hook[0]
+  const setState = hook[1]
   const draftState = useRef(initialState)
 
   const dispatch = action => {
-    hook[1](prevState => {
-      draftState.current = reducer(prevState, action)
-      return draftState.current
-    })
+    draftState.current = reducer(draftState.current, action)
+    setState(draftState.current)
     return action
   }
   const store = {
@@ -24,7 +24,7 @@ function useEnhancedReducer(reducer, initialState, middlewares = []) {
   const chain = middlewares.map(middleware => middleware(store))
   const enhancedDispatch = compose.apply(undefined, chain)(dispatch)
 
-  return [hook[0], enhancedDispatch]
+  return [state, enhancedDispatch]
 }
 
-export default useEnhancedReducer
+export default useReducerX

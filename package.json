@@ -1,11 +1,11 @@
 {
-  "name": "@0y0/use-enhanced-reducer",
+  "name": "@0y0/use-reducer-x",
   "version": "1.0.0",
   "description": "An alternative to React.useReducer that accepts middlewares to do some cool things before and after dispatch.",
   "src": "src/index.js",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
-  "repository": "https://github.com/o0y0o/react-enhanced-reducer-hook",
+  "repository": "https://github.com/o0y0o/use-reducer-x",
   "author": "Jason Chung <shiningjason1989@gmail.com>",
   "license": "MIT",
   "publishConfig": {
@@ -38,7 +38,7 @@
     "@testing-library/react-hooks": "^3.4.1",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.3.0",
-    "eslint": "^7.8.1",
+    "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.0",

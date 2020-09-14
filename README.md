@@ -1,13 +1,13 @@
-# @0y0/use-enhanced-reducer · [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/o0y0o/use-enhanced-reducer/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/@0y0/use-enhanced-reducer.svg)](https://www.npmjs.com/package/@0y0/use-enhanced-reducer) ![Status](https://github.com/o0y0o/use-enhanced-reducer/workflows/Package/badge.svg)
+# @0y0/use-reducer-x · [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/o0y0o/use-reducer-x/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/@0y0/use-reducer-x.svg)](https://www.npmjs.com/package/@0y0/use-reducer-x) ![Status](https://github.com/o0y0o/use-reducer-x/workflows/Package/badge.svg)
 
-`@0y0/use-enhanced-reducer` is an alternative to `React.useReducer` that accepts middlewares to do some cool things before and after dispatch.
+`@0y0/use-reducer-x` is an alternative to `React.useReducer` that accepts middlewares to do some cool things before and after dispatch.
 
 Inspired by [Redux Middleware](https://redux.js.org/api/applymiddleware).
 
 ### 3-second quick look
 
 ```js
-import useEnhancedReducer from '@0y0/use-enhanced-reducer'
+import useReducerX from '@0y0/use-reducer-x'
 
 function App() {
   const middlewares = [
@@ -17,7 +17,7 @@ function App() {
        // do something after dispatch...
     }
   ]
-  const [state, dispatch] = useEnhancedReducer(reducer, initialState, middlewares)
+  const [state, dispatch] = useReducerX(reducer, initialState, middlewares)
   // ...
 }
 ```
@@ -25,14 +25,14 @@ function App() {
 ## Installation
 
 ```
-npm install @0y0/use-enhanced-reducer --save
+npm install @0y0/use-reducer-x --save
 ```
 
 ## Real-world Usage
 
 ```js
 import React from 'react'
-import useEnhancedReducer from '@0y0/use-enhanced-reducer'
+import useReducerX from '@0y0/use-reducer-x'
 import thunkMiddleware from 'redux-thunk'
 
 function logMiddleware({ getState }) {
@@ -52,7 +52,7 @@ function gaMiddleware({ getState }) {
 }
 
 function useAppReducer(reducer, inititalState) {
-  return useEnhancedReducer(reducer, inititalState, [
+  return useReducerX(reducer, inititalState, [
     thunkMiddleware,
     logMiddleware,
     gaMiddleware
@@ -90,4 +90,4 @@ Try the demo in [codesanbox](https://codesandbox.io/s/xono668ynz).
 
 ## License
 
-[MIT](https://github.com/o0y0o/use-enhanced-reducer/blob/master/LICENSE)
+[MIT](https://github.com/o0y0o/use-reducer-x/blob/master/LICENSE)
