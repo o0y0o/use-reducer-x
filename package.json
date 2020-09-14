@@ -32,6 +32,7 @@
     "build": "rollup -c"
   },
   "devDependencies": {
+    "@0y0/eslint-config-vanilla": "^1.0.0",
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@rollup/plugin-babel": "^5.2.1",
@@ -39,12 +40,6 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.3.0",
     "eslint": "^7.9.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
     "jest": "^26.4.2",
     "prettier": "^2.1.1",
     "react": "^16.8.5",
