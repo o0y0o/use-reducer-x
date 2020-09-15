@@ -1,4 +1,4 @@
-# @0y0/use-reducer-x · [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/o0y0o/use-reducer-x/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/@0y0/use-reducer-x.svg)](https://www.npmjs.com/package/@0y0/use-reducer-x) ![Status](https://github.com/o0y0o/use-reducer-x/workflows/Package/badge.svg)
+# @0y0/use-reducer-x · [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/o0y0o/use-reducer-x/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/@0y0/use-reducer-x.svg)](https://www.npmjs.com/package/@0y0/use-reducer-x) ![Package Status](https://github.com/o0y0o/use-reducer-x/workflows/Package/badge.svg) ![Test Status](https://github.com/o0y0o/use-reducer-x/workflows/Test/badge.svg)
 
 `@0y0/use-reducer-x` is an alternative to `React.useReducer` that accepts middlewares to do some cool things before and after dispatch.
 
