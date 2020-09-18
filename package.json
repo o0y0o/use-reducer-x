@@ -41,7 +41,7 @@
     "babel-jest": "^26.3.0",
     "eslint": "^7.9.0",
     "jest": "^26.4.2",
-    "prettier": "^2.1.1",
+    "prettier": "^2.1.2",
     "react": "^16.8.5",
     "react-test-renderer": "^16.13.1",
     "rollup": "^2.26.11"
