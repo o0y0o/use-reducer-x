@@ -44,7 +44,7 @@
     "prettier": "^2.1.1",
     "react": "^16.8.5",
     "react-test-renderer": "^16.13.1",
-    "rollup": "^2.26.11"
+    "rollup": "^2.27.1"
   },
   "peerDependencies": {
     "react": ">=16.8.0"
