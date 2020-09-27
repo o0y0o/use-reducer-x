@@ -24,7 +24,7 @@ function App() {
 
 ## Installation
 
-```
+```sh
 npm install @0y0/use-reducer-x --save
 ```
 
