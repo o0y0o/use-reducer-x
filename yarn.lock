@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@0y0/eslint-config-vanilla@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@0y0/eslint-config-vanilla/-/eslint-config-vanilla-1.1.1.tgz#bde955969534915af19a8eb6f68f12e2058526b8"
-  integrity sha512-9ZcjyrWhOW1uNYEpgjsSLDIGuJMs5HFjZNy5lqFnSNlIqkuwbv5P8R9jGh3Gs5lbQzvJaHxM9r5UzFbaohcrCg==
+"@0y0/eslint-config-vanilla@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@0y0/eslint-config-vanilla/-/eslint-config-vanilla-1.1.2.tgz#5228e7919a9abe00b96febbdd9f67db7450f7008"
+  integrity sha512-z/sHi8kqRLIajP4YRRhellukmmDgkEiGeEdjbDESkci7Xm2FW574ZAShaNgmZZaE9kGRw7lICSRZyoJ/PD4WYw==
   dependencies:
     "@babel/eslint-parser" "^7.12.1"
     eslint-config-prettier "^7.1.0"
@@ -13,7 +13,7 @@
     eslint-plugin-import "^2.22.1"
     eslint-plugin-node "^11.1.0"
     eslint-plugin-promise "^4.2.1"
-    eslint-plugin-standard "^4.0.2"
+    eslint-plugin-standard "^4.1.0"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4":
   version "7.10.4"
@@ -2328,7 +2328,7 @@ eslint-plugin-promise@^4.2.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-4.2.1.tgz#845fd8b2260ad8f82564c1222fce44ad71d9418a"
   integrity sha512-VoM09vT7bfA7D+upt+FjeBO5eHIJQBUWki1aPvB+vbNiHS3+oGIJGIeyBtKQTME6UPXXy3vV07OL1tHd3ANuDw==
 
-eslint-plugin-standard@^4.0.2:
+eslint-plugin-standard@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-standard/-/eslint-plugin-standard-4.1.0.tgz#0c3bf3a67e853f8bbbc580fb4945fbf16f41b7c5"
   integrity sha512-ZL7+QRixjTR6/528YNGyDotyffm5OQst/sGxKDwGb9Uqs4In5Egi4+jbobhqJoyoCM6/7v/1A5fhQ7ScMtDjaQ==

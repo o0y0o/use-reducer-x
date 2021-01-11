@@ -33,7 +33,7 @@
     "pkg": "[ $(yarn info $npm_package_name version) != $npm_package_version ] && yarn publish || echo Skip publishing due to v$npm_package_version exist"
   },
   "devDependencies": {
-    "@0y0/eslint-config-vanilla": "^1.1.1",
+    "@0y0/eslint-config-vanilla": "^1.1.2",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.10",
     "@rollup/plugin-babel": "^5.2.2",
