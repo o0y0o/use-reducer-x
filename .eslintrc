@@ -1,3 +1,1 @@
-{
-  "extends": "@0y0/eslint-config-vanilla"
-}
+{ "extends": "@0y0/vanilla" }

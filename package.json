@@ -33,18 +33,18 @@
     "pkg": "[ $(yarn info $npm_package_name version) != $npm_package_version ] && yarn publish || echo Skip publishing due to v$npm_package_version exist"
   },
   "devDependencies": {
+    "@0y0/babel-preset-vanilla": "^1.0.0",
     "@0y0/eslint-config-vanilla": "^1.1.2",
     "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.10",
     "@rollup/plugin-babel": "^5.2.2",
-    "@testing-library/react-hooks": "^3.7.0",
+    "@testing-library/react-hooks": "^4.0.1",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
     "eslint": "^7.17.0",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
-    "react": "^16.14.0",
-    "react-test-renderer": "^16.14.0",
+    "react": "^17.0.1",
+    "react-test-renderer": "^17.0.1",
     "rollup": "^2.36.1"
   },
   "peerDependencies": {
