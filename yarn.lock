@@ -2,20 +2,16 @@
 # yarn lockfile v1
 
 
-"@0y0/babel-preset-vanilla@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@0y0/babel-preset-vanilla/-/babel-preset-vanilla-1.0.0.tgz#f28b86d402c7dc456e44dc799187355ec65f4c4c"
-  integrity sha512-lV+l+MuoyW1dJOcvwdEJ+r14WsFCec2NIJpyLrwhwLvyWKLKmnOCYe2ZgV/arEPIdw2IORT2FYTFxG4caXrRzQ==
+"@0y0/babel-preset-vanilla@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@0y0/babel-preset-vanilla/-/babel-preset-vanilla-1.0.1.tgz#6e70341d95f03b7b32c01b791061c2ee6e735333"
+  integrity sha512-D66B2SvxqQJg/txzO7H2P73RDFznRTDWhQ2Lm019eNEmBGLCGoxLMtCeK/XPST0nW3N1WldKto2GKYkuT9C2gg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.12.1"
     "@babel/plugin-proposal-decorators" "^7.12.12"
     "@babel/plugin-proposal-do-expressions" "^7.12.1"
     "@babel/plugin-proposal-export-default-from" "^7.12.1"
-    "@babel/plugin-proposal-export-namespace-from" "^7.12.1"
     "@babel/plugin-proposal-function-bind" "^7.12.1"
-    "@babel/plugin-proposal-logical-assignment-operators" "^7.12.1"
-    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.12.1"
-    "@babel/plugin-proposal-optional-chaining" "^7.12.7"
     "@babel/plugin-proposal-partial-application" "^7.12.1"
     "@babel/plugin-proposal-pipeline-operator" "^7.12.1"
     "@babel/plugin-proposal-private-methods" "^7.12.1"
@@ -1469,14 +1465,17 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@testing-library/react-hooks@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@testing-library/react-hooks/-/react-hooks-4.0.1.tgz#bb678abb7c766c192da74be50148ad8337a5503f"
-  integrity sha512-DufI8Q2GOM7W2yFEEfz85VNVNaHZL0tPZyBT6ytV7HK+1A4frL1ty+W5NBE0u0K3EFV/Pg5O28HGNEtp9D5EyA==
+"@testing-library/react-hooks@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-hooks/-/react-hooks-5.0.0.tgz#994af047a94c7ed04b34920f70b3fd017e9976cd"
+  integrity sha512-c/wvcz/Set+KOvbi07EQO7tujsUIp5HnNAygJoSpMTVkIDcp7JtSemhjRDg1WL6Qsw076inWobTKCepK3mgi8A==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@types/react" ">=16.9.0"
+    "@types/react-dom" ">=16.9.0"
     "@types/react-test-renderer" ">=16.9.0"
+    filter-console "^0.1.1"
+    react-error-boundary "^3.1.0"
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.10"
@@ -1571,6 +1570,13 @@
   version "15.7.3"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+
+"@types/react-dom@>=16.9.0":
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.0.tgz#b3b691eb956c4b3401777ee67b900cb28415d95a"
+  integrity sha512-lUqY7OlkF/RbNtD5nIq7ot8NquXrdFrjSOR6+w9a9RFQevGi1oZO1dcJbXMeONAPKtZ2UrZOEJ5UOCVsxbLk/g==
+  dependencies:
+    "@types/react" "*"
 
 "@types/react-test-renderer@>=16.9.0":
   version "17.0.0"
@@ -2797,6 +2803,11 @@ fill-range@^7.0.1:
   integrity sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
   dependencies:
     to-regex-range "^5.0.1"
+
+filter-console@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/filter-console/-/filter-console-0.1.1.tgz#6242be28982bba7415bcc6db74a79f4a294fa67c"
+  integrity sha512-zrXoV1Uaz52DqPs+qEwNJWJFAWZpYJ47UNmpN9q4j+/EYsz85uV0DC9k8tRND5kYmoVzL0W+Y75q4Rg8sRJCdg==
 
 find-babel-config@^1.2.0:
   version "1.2.0"
@@ -4544,6 +4555,13 @@ qs@~6.5.2:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+
+react-error-boundary@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/react-error-boundary/-/react-error-boundary-3.1.0.tgz#9487443df2f9ba1db90d8ab52351814907ea4af3"
+  integrity sha512-lmPrdi5SLRJR+AeJkqdkGlW/CRkAUvZnETahK58J4xb5wpbfDngasEGu+w0T1iXEhVrYBJZeW+c4V1hILCnMWQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
 
 "react-is@^16.12.0 || ^17.0.0", react-is@^17.0.1:
   version "17.0.1"
