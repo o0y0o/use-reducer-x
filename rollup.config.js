@@ -10,7 +10,7 @@ const external = [pkg.dependencies, pkg.peerDependencies]
 export default {
   input: path.join(__dirname, pkg.src),
   external,
-  plugins: [babel({ exclude: 'node_modules/**', babelHelpers: 'bundled' })],
+  plugins: [babel({ exclude: 'node_modules/**', babelHelpers: 'runtime' })],
   output: [
     {
       file: path.join(__dirname, pkg.main),
