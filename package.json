@@ -35,7 +35,7 @@
   "devDependencies": {
     "@0y0/babel-preset-vanilla": "^1.0.1",
     "@0y0/eslint-config-vanilla": "^1.1.2",
-    "@babel/core": "^7.12.10",
+    "@babel/core": "^7.12.13",
     "@rollup/plugin-babel": "^5.2.3",
     "@testing-library/react-hooks": "^5.0.3",
     "babel-eslint": "^10.1.0",
