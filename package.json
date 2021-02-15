@@ -36,7 +36,7 @@
     "@0y0/babel-preset-vanilla": "^1.0.1",
     "@0y0/eslint-config-vanilla": "^1.1.2",
     "@babel/core": "^7.12.16",
-    "@rollup/plugin-babel": "^5.2.3",
+    "@rollup/plugin-babel": "^5.3.0",
     "@testing-library/react-hooks": "^5.0.3",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
