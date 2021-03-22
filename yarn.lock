@@ -23,13 +23,13 @@
     babel-plugin-module-resolver "^4.1.0"
     babel-plugin-transform-imports "^2.0.0"
 
-"@0y0/eslint-config-vanilla@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@0y0/eslint-config-vanilla/-/eslint-config-vanilla-1.2.2.tgz#e8ec7313a91c27a3af44fd6c5d77f370fc484200"
-  integrity sha512-qGJO9XlrSz5hRxMnVrDR18KIGoYUygOgJCoweDCy3BeOxZ+No99zhDjnSh/heZvtn7KgsimwaTaiPCS+mPjhcA==
+"@0y0/eslint-config-vanilla@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@0y0/eslint-config-vanilla/-/eslint-config-vanilla-1.2.3.tgz#30ad4cb49a353166232c119e8ecaeb0c008115e6"
+  integrity sha512-/3QNrnY4Mmu5VCXWYU4lLoC0X5U5kWpMt3KfVYr57c+VpoP7k0J/DBzR57X+E6Hk+rkN/xfaXuVPS2KY0CrwHA==
   dependencies:
-    "@babel/core" "^7.0.0"
-    "@babel/eslint-parser" "^7.13.8"
+    "@babel/core" "^7.13.10"
+    "@babel/eslint-parser" "^7.13.10"
     eslint-config-prettier "^8.1.0"
     eslint-config-standard "^16.0.2"
     eslint-plugin-import "^2.22.1"
@@ -55,7 +55,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.13.8.tgz#5b783b9808f15cef71547f1b691f34f8ff6003a6"
   integrity sha512-EaI33z19T4qN3xLXsGf48M2cDqa6ei9tPZlfLdb2HC+e/cFtREiRd8hdSqDbwdLB0/+gLwqJmCYASH0z2bUdog==
 
-"@babel/core@^7.0.0", "@babel/core@^7.1.0", "@babel/core@^7.7.5":
+"@babel/core@^7.1.0", "@babel/core@^7.7.5":
   version "7.13.8"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.13.8.tgz#c191d9c5871788a591d69ea1dc03e5843a3680fb"
   integrity sha512-oYapIySGw1zGhEFRd6lzWNLWFX2s5dA/jm+Pw/+59ZdXtjyIuwlXbrId22Md0rgZVop+aVoqow2riXhBLNyuQg==
@@ -99,10 +99,10 @@
     semver "^6.3.0"
     source-map "^0.5.0"
 
-"@babel/eslint-parser@^7.13.8":
-  version "7.13.8"
-  resolved "https://registry.yarnpkg.com/@babel/eslint-parser/-/eslint-parser-7.13.8.tgz#6f2bde6b0690fcc0598b4869fc7c8e8b55b17687"
-  integrity sha512-XewKkiyukrGzMeqToXJQk6hjg2veI9SNQElGzAoAjKxYCLbgcVX4KA2WhoyqMon9N4RMdCZhNTJNOBcp9spsiw==
+"@babel/eslint-parser@^7.13.10":
+  version "7.13.10"
+  resolved "https://registry.yarnpkg.com/@babel/eslint-parser/-/eslint-parser-7.13.10.tgz#e272979914f36bb6cea144c14c32bb51632696dd"
+  integrity sha512-/I1HQ3jGPhIpeBFeI3wO9WwWOnBYpuR0pX0KlkdGcRQAVX9prB/FCS2HBpL7BiFbzhny1YCiBH8MTZD2jJa7Hg==
   dependencies:
     eslint-scope "5.1.0"
     eslint-visitor-keys "^1.3.0"
