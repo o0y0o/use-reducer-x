@@ -60,17 +60,19 @@ test('middlewares should be invoked by order', () => {
 test('middleware should able to re-dispatch action', () => {
   let step = 0
   const middlewares = [
-    ({ dispatch }) => next => action => {
-      if (typeof action === 'function') {
-        expect(++step).toEqual(1)
-        action(dispatch)
-        expect(++step).toEqual(2)
-      } else {
-        expect(++step).toEqual(4)
-        next(action)
-        expect(++step).toEqual(7)
-      }
-    },
+    ({ dispatch }) =>
+      next =>
+      action => {
+        if (typeof action === 'function') {
+          expect(++step).toEqual(1)
+          action(dispatch)
+          expect(++step).toEqual(2)
+        } else {
+          expect(++step).toEqual(4)
+          next(action)
+          expect(++step).toEqual(7)
+        }
+      },
     () => next => action => {
       expect(++step).toEqual(5)
       next(action)
@@ -92,11 +94,13 @@ test('middleware should able to get state', () => {
   const x = 2
   const addAction = { type: '+x', x }
   const middlewares = [
-    ({ getState }) => next => action => {
-      expect(getState()).toEqual(initialState)
-      next(action)
-      expect(getState()).toEqual(initialState + x)
-    }
+    ({ getState }) =>
+      next =>
+      action => {
+        expect(getState()).toEqual(initialState)
+        next(action)
+        expect(getState()).toEqual(initialState + x)
+      }
   ]
   const { result } = renderHook(() =>
     useReducerX(reducer, initialState, middlewares)
