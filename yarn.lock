@@ -23,16 +23,16 @@
     babel-plugin-module-resolver "^4.1.0"
     babel-plugin-transform-imports "^2.0.0"
 
-"@0y0/eslint-config-vanilla@^1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@0y0/eslint-config-vanilla/-/eslint-config-vanilla-1.2.4.tgz#73e73a51b0bc82db28315b7b0ac4ea587f1578b0"
-  integrity sha512-3PieYlUBeX++Ft2MbuP/j+yKOoxm9kvpXYWn0w3fyJT7GWb1l51PwVaAXnIFHDHZJZlBvjTv9w0eJ+nzq3x5ZQ==
+"@0y0/eslint-config-vanilla@^1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@0y0/eslint-config-vanilla/-/eslint-config-vanilla-1.2.5.tgz#f9fa8af84f50f6369e0f841eb8745c4c577484cf"
+  integrity sha512-Y2ymuj+9EdvfhcimLwdNpoRkW+0tFMbludMLmtUIuVo48xYGyzrK8AFwNhBfKtbQu0DEXO0zlBoqs6FjwnmZJg==
   dependencies:
-    "@babel/core" "^7.13.16"
-    "@babel/eslint-parser" "^7.13.14"
+    "@babel/core" "^7.14.6"
+    "@babel/eslint-parser" "^7.14.7"
     eslint-config-prettier "^8.3.0"
-    eslint-config-standard "^16.0.2"
-    eslint-plugin-import "^2.22.1"
+    eslint-config-standard "^16.0.3"
+    eslint-plugin-import "^2.23.4"
     eslint-plugin-node "^11.1.0"
     eslint-plugin-promise "^5.1.0"
 
@@ -55,7 +55,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.14.7.tgz#7b047d7a3a89a67d2258dc61f604f098f1bc7e08"
   integrity sha512-nS6dZaISCXJ3+518CWiBfEr//gHyMO02uDxBkXTKZDN5POruCnOZ1N4YBRZDCabwF8nZMWBpRxIicmXtBs+fvw==
 
-"@babel/core@^7.1.0", "@babel/core@^7.13.10", "@babel/core@^7.13.16", "@babel/core@^7.7.2", "@babel/core@^7.7.5":
+"@babel/core@^7.1.0", "@babel/core@^7.13.10", "@babel/core@^7.14.6", "@babel/core@^7.7.2", "@babel/core@^7.7.5":
   version "7.14.6"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.14.6.tgz#e0814ec1a950032ff16c13a2721de39a8416fcab"
   integrity sha512-gJnOEWSqTk96qG5BoIrl5bVtc23DCycmIePPYnamY9RboYdI4nFy5vAQMSl81O5K/W0sLDWfGysnOECC+KUUCA==
@@ -76,7 +76,7 @@
     semver "^6.3.0"
     source-map "^0.5.0"
 
-"@babel/eslint-parser@^7.13.14":
+"@babel/eslint-parser@^7.14.7":
   version "7.14.7"
   resolved "https://registry.yarnpkg.com/@babel/eslint-parser/-/eslint-parser-7.14.7.tgz#91be59a4f7dd60d02a3ef772d156976465596bda"
   integrity sha512-6WPwZqO5priAGIwV6msJcdc9TsEPzYeYdS/Xuoap+/ihkgN6dzHp2bcAAwyWZ5bLzk0vvjDmKvRwkqNaiJ8BiQ==
@@ -2094,7 +2094,7 @@ eslint-config-prettier@^8.3.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
   integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
 
-eslint-config-standard@^16.0.2:
+eslint-config-standard@^16.0.3:
   version "16.0.3"
   resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-16.0.3.tgz#6c8761e544e96c531ff92642eeb87842b8488516"
   integrity sha512-x4fmJL5hGqNJKGHSjnLdgA6U6h1YW/G2dW9fA+cyVur4SK6lyue8+UgNKWlZtUDTXvgKDD/Oa3GQjmB5kjtVvg==
@@ -2123,7 +2123,7 @@ eslint-plugin-es@^3.0.0:
     eslint-utils "^2.0.0"
     regexpp "^3.0.0"
 
-eslint-plugin-import@^2.22.1:
+eslint-plugin-import@^2.23.4:
   version "2.23.4"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.23.4.tgz#8dceb1ed6b73e46e50ec9a5bb2411b645e7d3d97"
   integrity sha512-6/wP8zZRsnQFiR3iaPFgh5ImVRM1WN5NUWfTIRqwOdeiGJlBcSk82o1FEVq8yXmy4lkIzTo7YhHCIxlU/2HyEQ==
