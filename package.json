@@ -43,7 +43,7 @@
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-test-renderer": "^17.0.2",
-    "rollup": "^2.52.3"
+    "rollup": "^2.54.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0"
