@@ -33,7 +33,7 @@
     "pkg": "[ $(yarn info $npm_package_name version) != $npm_package_version ] && yarn publish || echo Skip publishing due to v$npm_package_version exist"
   },
   "devDependencies": {
-    "@0y0/babel-preset-vanilla": "^1.1.3",
+    "@0y0/babel-preset-vanilla": "^1.1.5",
     "@0y0/eslint-config-vanilla": "^1.2.5",
     "@rollup/plugin-babel": "^5.3.0",
     "@testing-library/react-hooks": "^7.0.2",
